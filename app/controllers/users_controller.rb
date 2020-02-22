@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  
+  #事前処理
+  before_action :require_user_logged_in, only: [, :show]
 
 
   def show
